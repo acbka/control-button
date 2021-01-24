@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eb13c809.chunk.css",
+    "main.js": "/static/js/main.74df197e.chunk.js",
+    "main.js.map": "/static/js/main.74df197e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.82bafd55.js",
+    "runtime-main.js.map": "/static/js/runtime-main.82bafd55.js.map",
+    "static/js/2.14910c7b.chunk.js": "/static/js/2.14910c7b.chunk.js",
+    "static/js/2.14910c7b.chunk.js.map": "/static/js/2.14910c7b.chunk.js.map",
+    "static/js/3.b12b8058.chunk.js": "/static/js/3.b12b8058.chunk.js",
+    "static/js/3.b12b8058.chunk.js.map": "/static/js/3.b12b8058.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.eb13c809.chunk.css.map": "/static/css/main.eb13c809.chunk.css.map",
+    "static/js/2.14910c7b.chunk.js.LICENSE.txt": "/static/js/2.14910c7b.chunk.js.LICENSE.txt",
+    "static/media/Magnifier.cfe3344a.svg": "/static/media/Magnifier.cfe3344a.svg",
+    "static/media/Visit Arrow.25c31f36.svg": "/static/media/Visit Arrow.25c31f36.svg",
+    "static/media/circle.b324166e.svg": "/static/media/circle.b324166e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82bafd55.js",
+    "static/js/2.14910c7b.chunk.js",
+    "static/css/main.eb13c809.chunk.css",
+    "static/js/main.74df197e.chunk.js"
+  ]
+}
