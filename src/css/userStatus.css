@@ -1,0 +1,5 @@
+.canvas{
+   position: fixed;
+   left: calc(50% - 95px);
+   top: calc(50% - 95px);
+}
