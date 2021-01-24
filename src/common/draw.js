@@ -3,7 +3,6 @@ export const clear = (ctx) => {
 }
 
 export const drawArc = (ctx, start, end, color, center, radius) => {
-   
    ctx.beginPath();
    ctx.lineWidth = 10;
    ctx.arc(center, center, radius, start, end);
@@ -50,5 +49,5 @@ export const drawTitle = (ctx, number, center) => {
       ctx.translate(0, -1 * radius); 
       ctx.fillText(string[i], 0, 0); 
       ctx.restore(); 
-  } 
+   } 
 };

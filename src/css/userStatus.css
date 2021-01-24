@@ -3,3 +3,8 @@
    left: calc(50% - 95px);
    top: calc(50% - 95px);
 }
+@media screen and (max-width: 450px) {
+   .canvas{
+      top: 150px;
+   }
+}

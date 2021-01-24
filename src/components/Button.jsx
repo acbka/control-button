@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/button.css'
 
-export const Button = ({clickButton, icon, name}) => {
+export const Button = ({clickButton, name, children}) => {
 
    const handleClick = e => {
       e.preventDefault();
@@ -10,7 +10,7 @@ export const Button = ({clickButton, icon, name}) => {
 
    return (
       <div>
-         <button className={name} onClick={handleClick}><img src={icon} alt={name} /></button>
+         <button className={name} onClick={handleClick}>{children}</button>
       </div>
    )
 }

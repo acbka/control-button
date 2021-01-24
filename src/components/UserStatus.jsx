@@ -6,28 +6,23 @@ import { drawCross } from '../common/draw';
 import { drawTitle } from '../common/draw';
 import { clear } from '../common/draw'
 
-
 export const UserStatus = ({member}) => {
 
    const canvasRef = useRef(null);
    const radius = 88;
    const center = 100;
 
-   
-
    useEffect(() => {
-      
       const canvas = canvasRef.current
       const context = canvas.getContext('2d');
       canvas.width = 200;
       canvas.height = 200;
-      
+
       clear(context);
 
       member.forEach(el => {
          let startArc = (el.start+1)*Math.PI/180;
          let endtArc = (el.end-1)*Math.PI/180;
-
          
          drawArc(context, startArc, endtArc, color[el.status], center, radius)
 

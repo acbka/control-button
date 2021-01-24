@@ -12,3 +12,8 @@
 h5{
    color: white;
 }
+@media screen and (max-width: 450px) {
+   .main-circle{
+      top: 245px;
+   }
+}

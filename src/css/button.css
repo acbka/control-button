@@ -14,3 +14,14 @@
    top: calc(50% + 18px);
    left: calc(50% + 23px); 
 }
+.add{
+   padding: 8px 15px;
+   border-radius: 5px;
+   font-size: 16px;
+}
+@media screen and (max-width: 450px) {
+   .visit,
+   .magnifier{
+      top: 265px;
+   }
+}

@@ -1,8 +1,8 @@
 import React, { useState} from 'react';
+import { Button } from './Button'
 import '../css/member.css'
 
 export const Member = ({dataInput, status}) => {
-
    const [value, setValue] = useState("lit");
 
    const handleChange = e => {
@@ -10,8 +10,7 @@ export const Member = ({dataInput, status}) => {
       setValue (e.target.value);
    };
 
-   const handleClick = e => {
-      e.preventDefault();
+   const handleClick = () => {
       dataInput(value);
    };
 
@@ -22,13 +21,12 @@ export const Member = ({dataInput, status}) => {
    return (
       <div>
          <form className="user-form">
-         <p className="text">Add a user with </p>
-            <select className="select-user"
-            onChange={handleChange}>
+            <p className="text">Add a user with </p>
+            <select className="select-user" onChange={handleChange}>
                {list}
             </select>
             <p className="text"> status</p>
-            <button className="addButton" onClick={handleClick}>add</button>
+            <Button clickButton={handleClick} name="add">add</Button>
          </form>
       </div>
    )
