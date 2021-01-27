@@ -30,7 +30,7 @@ export const UserStatus = ({member}) => {
             let crossCenter = (endtArc-startArc)/2 + startArc;
             let x = radius * Math.cos(crossCenter) + center;
             let y = radius * Math.sin(crossCenter) + center;
-            drawCross (context, x, y, color[el.status])
+            drawCross (context, x, y, color[el.status]);
          }
       });
 
@@ -38,5 +38,30 @@ export const UserStatus = ({member}) => {
 
    }, [member])
    
-   return <canvas className="canvas" ref={canvasRef}/>
+   const handleClick = (e) => {
+      e.preventDefault();
+      let xMouse = e.nativeEvent.offsetX;
+      let yMouse = e.nativeEvent.offsetY;
+      let angle;
+
+      if((Math.pow(xMouse-center, 2) + Math.pow(yMouse-center, 2) > Math.pow(radius-5,2)) && (Math.pow(xMouse-center, 2) + Math.pow(yMouse-center, 2) < Math.pow(radius + 5,2))) {
+         if (xMouse > 188) {
+            xMouse = 188
+         };
+         if (yMouse > 100) {
+            angle = 360 - Math.acos((xMouse - center)/radius)*180/Math.PI
+         } else {
+            angle = Math.acos((xMouse - center)/radius)*180/Math.PI;
+         }
+      } 
+
+      member.forEach(el => {
+         if (angle > el.start && angle < el.end) {
+            alert("Member " + el.id)
+         }
+      })
+   }
+
+   return <canvas className="canvas" ref={canvasRef}
+   onClick={handleClick}/>
 }
