@@ -48,7 +48,7 @@ export const UserStatus = ({member}) => {
          if (xMouse > 188) {
             xMouse = 188
          };
-         if (yMouse > 100) {
+         if (yMouse < 100) {
             angle = 360 - Math.acos((xMouse - center)/radius)*180/Math.PI
          } else {
             angle = Math.acos((xMouse - center)/radius)*180/Math.PI;
