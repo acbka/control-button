@@ -1,3 +1,7 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
 .main-circle {
   display: block;
   position: fixed;

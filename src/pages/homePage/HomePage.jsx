@@ -43,7 +43,7 @@ const HomePage = () => {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <Member dataInput={addMember} status={status}></Member>
       <div className="main-circle">
         <img src={circle} alt="circle"></img>
